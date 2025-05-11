@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Digital Garden</title>
+    <link rel="stylesheet" href="Test.css" />
+  </head>
+  <body style="background-image: url(https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fbackgroundyard.jpg?alt=media&token=3fecf332-6f77-47a5-8ecb-6154478714de); background-repeat: no-repeat; background-size: cover;">
+    <div id="soundboard">
+        <audio id="sound" loop src="https://github.com/LegendJurai/My-Digital-Garden/raw/refs/heads/main/001-Full-Track.mp3" type="audio/mp3">
+        </audio>     
+        <button id="soundbutton" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fsoundbutton.png?alt=media&token=45249429-892a-426b-b5d4-a36f82eafbf1">
+    </div>
+    <div id="startscreen">
+        <img class="scroll" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fscroll_1.png?alt=media&token=fe08dabc-d9e7-4d46-bd68-47308db6848e">
+        <div id="startcontainer">
+            <h2 id="welcome">Welcome to</h2>
+            <h1 id="headline">My Magical Garden</h1>
+            <p id="text-one">Explore the fascinating world of magical flowers as an enthusiastic plant-explorer in the world of Codédex! Each seed has an unique and mysterious trait whose secrets will be exposed by breeding the plants with each other. Try it out yourself and reveal the magic and histories behind these flowers!</p>
+            <p id="text-two"><b>Game Rules: </b>Combine the seeds, seedlings and flowers together by picking them up with your cursor, dragging them to the same species (seed, seedling, flower) and eventually dropping them. The notebook on your left helps you to memorize all formulas of the breeding plants. The flowerbed on your right shows you which flowers you have already discovered. Fill out the whole flowerbed to successfully complete your notebook and finish your journey as a plant-explorer in this magical garden of Codédex!</p>  
+            <p id="text-three">Don't forget to turn on the wonderful music of this magical garden by clicking on the soundbutton in your top-left corner! Click on the button to start the game and begin your journey!</p> 
+        </div>
+        <button id="startbutton">
+            <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fstartbutton.png?alt=media&token=fad3792a-a2a8-4626-833f-3bebf447a1ed">
+        </button>
+    </div>
+    <div id="game" style="display:none;">
+        <div class="back">
+            <h1 id="header">My Magical Garden</h1>
+        </div>
+        <div class="flexblock">
+            <div id="notebook">
+                <img class="notebook" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fnotebook.png?alt=media&token=bcdf97c7-6183-4cc1-bbce-c4a056464166" alt="Notebook">
+                <div class="formula-container">
+                    <div class="formula">
+                        <div class="formula-line">
+                            <img id="seed-1-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseed.png?alt=media&token=29f7e34d-59a5-4843-b34e-308aeb49a424" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="seed-1-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseed.png?alt=media&token=29f7e34d-59a5-4843-b34e-308aeb49a424" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="seedling-1-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="seedling-2-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="seedling-2-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="earthflower-2-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fearthflower.png?alt=media&token=b5e7da1c-b110-4928-b71d-75042bd144e1" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="seedling-3-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="seedling-3-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="waterflower-3-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterflower.png?alt=media&token=472c134f-a025-4c5f-a03b-c44e80ea65c2" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="seedling-4-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="seedling-4-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="fireflower-4-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ffireflower.png?alt=media&token=d8106827-fc5a-460e-8796-9b29666a0b6f" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="seedling-5-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="seedling-5-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fseedling.png?alt=media&token=1a83334a-bd19-4cca-ace0-ea75a9a4a261" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="windflower-5-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwindflower.png?alt=media&token=990fb4f0-0256-4d1e-bb9c-063727af05d5" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="windflower-6-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwindflower.png?alt=media&token=990fb4f0-0256-4d1e-bb9c-063727af05d5" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="fireflower-6-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ffireflower.png?alt=media&token=d8106827-fc5a-460e-8796-9b29666a0b6f" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="stormflower-6-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fstormflower.png?alt=media&token=5f89836c-274f-4046-86f9-dcb4ce8241d8" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="earthflower-7-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fearthflower.png?alt=media&token=b5e7da1c-b110-4928-b71d-75042bd144e1" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="waterflower-7-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterflower.png?alt=media&token=472c134f-a025-4c5f-a03b-c44e80ea65c2" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="mysticflower-7-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fmysticflower.png?alt=media&token=94a3af1d-aeb2-4d8e-a477-622d436b5464" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="waterflower-8-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterflower.png?alt=media&token=472c134f-a025-4c5f-a03b-c44e80ea65c2" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="windflower-8-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwindflower.png?alt=media&token=990fb4f0-0256-4d1e-bb9c-063727af05d5" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="iceflower-8-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ficeflower.png?alt=media&token=0c826d61-9508-40e8-8a92-fc300350012e" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="fireflower-9-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ffireflower.png?alt=media&token=d8106827-fc5a-460e-8796-9b29666a0b6f" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="earthflower-9-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fearthflower.png?alt=media&token=b5e7da1c-b110-4928-b71d-75042bd144e1" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="magmaflower-9-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fmagmaflower.png?alt=media&token=692e40d3-ba48-49c6-a364-4c26f0a91f70" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="fireflower-10-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ffireflower.png?alt=media&token=d8106827-fc5a-460e-8796-9b29666a0b6f" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="waterflower-10-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterflower.png?alt=media&token=472c134f-a025-4c5f-a03b-c44e80ea65c2" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="darkflower-10-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fdarkflower.png?alt=media&token=a2dfd755-201a-401f-a8c3-91f602cea039" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="earthflower-11-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fearthflower.png?alt=media&token=b5e7da1c-b110-4928-b71d-75042bd144e1" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="windflower-11-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwindflower.png?alt=media&token=990fb4f0-0256-4d1e-bb9c-063727af05d5" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="lightflower-11-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Flightflower.png?alt=media&token=885e40cb-81f5-4c11-9910-de1dd2c37cb8" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="earthflower-12-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fearthflower.png?alt=media&token=b5e7da1c-b110-4928-b71d-75042bd144e1" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="earthflower-12-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fearthflower.png?alt=media&token=b5e7da1c-b110-4928-b71d-75042bd144e1" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="mountainflower-12-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fmountainflower1.png?alt=media&token=70b97d00-a9f8-4781-97ba-83ab2b6a2dff" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="waterflower-13-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterflower.png?alt=media&token=472c134f-a025-4c5f-a03b-c44e80ea65c2" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="waterflower-13-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterflower.png?alt=media&token=472c134f-a025-4c5f-a03b-c44e80ea65c2" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="waterfallflower-13-3"src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterfallflower.png?alt=media&token=bfba1b3f-e605-4c22-a33f-e1da3b879513" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="fireflower-14-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ffireflower.png?alt=media&token=d8106827-fc5a-460e-8796-9b29666a0b6f" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="fireflower-14-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ffireflower.png?alt=media&token=d8106827-fc5a-460e-8796-9b29666a0b6f" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="sunflower-14-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fsunflower.png?alt=media&token=d39120a2-4bfe-41a6-a6f8-3bf798d45039" alt="Formel 3">
+                        </div>
+                        <div class="formula-line">
+                            <img id="windflower-15-1" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwindflower.png?alt=media&token=990fb4f0-0256-4d1e-bb9c-063727af05d5" alt="Formel 1">
+                            <h1>+</h1>
+                            <img id="windflower-15-2" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwindflower.png?alt=media&token=990fb4f0-0256-4d1e-bb9c-063727af05d5" alt="Formel 2">
+                            <h1>=</h1>
+                            <img id="tornadoflower-15-3" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ftornadoflower.png?alt=media&token=2f8aafaa-1963-417c-b38b-337eea831798" alt="Formel 3">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="garden">
+                <img id="gardenpicture" alt="gardenpicture" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2Fgrj7Uul6QPOgcp6YSmLq%2Fgarten.jpg?alt=media&token=62fd0ba7-a364-44e2-b974-0e5f10e62f82">
+                <div id="box" style="display: none;">
+                    <div id="textbox">
+                        <h3>Congratulations!</h3>
+                        <h4 id="flowerDiscovered">You discovered a new plant: The Seedling!</h4>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2Fgrj7Uul6QPOgcp6YSmLq%2Fseedling.png?alt=media&token=4c78b386-6299-4f10-a60c-d2955c257bfb" id="flowerImage">
+                        <br>
+                        <p id="content">This is a simple seedling. Maybe two seedlings could create something great together...! <p>
+                        <button id="closeButton">Close</button>
+                    </div>
+                </div>
+                <div id="dropArea"></div>
+            </div>
+            <div id="plantcontainer">
+                <img class="plantcontainer" alt="plantcontainer" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2Fgrj7Uul6QPOgcp6YSmLq%2Fflowerbed.png?alt=media&token=4a971f07-9111-49b5-a058-51eef5ee5a83 ">
+                <div class="plantbox">
+                    <div class="plantfield">
+                        <img id="earthflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fearthflower.png?alt=media&token=b5e7da1c-b110-4928-b71d-75042bd144e1">
+                        <img id="waterflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterflower.png?alt=media&token=472c134f-a025-4c5f-a03b-c44e80ea65c2">
+                    </div>
+                    <div class="plantfield">
+                        <img id="fireflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ffireflower.png?alt=media&token=d8106827-fc5a-460e-8796-9b29666a0b6f">
+                        <img id="windflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwindflower.png?alt=media&token=990fb4f0-0256-4d1e-bb9c-063727af05d5">
+                    </div>
+                    <div class="plantfield">
+                        <img id="stormflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fstormflower.png?alt=media&token=5f89836c-274f-4046-86f9-dcb4ce8241d8">
+                        <img id="mysticflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fmysticflower.png?alt=media&token=94a3af1d-aeb2-4d8e-a477-622d436b5464">
+                    </div>
+                    <div class="plantfield">
+                        <img id="iceflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ficeflower.png?alt=media&token=0c826d61-9508-40e8-8a92-fc300350012e">
+                        <img id="magmaflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fmagmaflower.png?alt=media&token=692e40d3-ba48-49c6-a364-4c26f0a91f70">
+                    </div>
+                    <div class="plantfield">
+                        <img id="darkflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fdarkflower.png?alt=media&token=a2dfd755-201a-401f-a8c3-91f602cea039">
+                        <img id="lightflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Flightflower.png?alt=media&token=885e40cb-81f5-4c11-9910-de1dd2c37cb8">
+                    </div>
+                    <div class="plantfield">
+                        <img id="mountainflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fmountainflower1.png?alt=media&token=70b97d00-a9f8-4781-97ba-83ab2b6a2dff">
+                        <img id="waterfallflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fwaterfallflower.png?alt=media&token=bfba1b3f-e605-4c22-a33f-e1da3b879513">
+                    </div>
+                    <div class="plantfield">
+                        <img id="sunflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Fsunflower.png?alt=media&token=d39120a2-4bfe-41a6-a6f8-3bf798d45039">
+                        <img id="tornadoflower" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FQgYgmwPsphfU0ponX2J6%2Ftornadoflower.png?alt=media&token=2f8aafaa-1963-417c-b38b-337eea831798">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Test.js"></script>
+  </body>
+</html>
